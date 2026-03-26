@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --primary: #1e3a8a;
+  --secondary: #2563eb;
+  --accent: #f59e0b;
+  --muted: #f3f4f6;
+  --text: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+  color: var(--primary);
+}
+
+@layer base {
+  * {
+    @apply border-transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  main {
+    @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-slate;
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-surface {
+    @apply rounded-[28px] border bg-white shadow-card;
+    border-color: rgba(226, 232, 240, 0.8);
+  }
+
+  .section-kicker {
+    @apply text-sm font-semibold uppercase tracking-[0.28em] text-secondary;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-tight text-slate sm:text-4xl lg:text-[2.75rem];
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-slate-600;
+  }
+
+  .grid-overlay {
+    background-image: linear-gradient(rgba(226, 232, 240, 0.55) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(226, 232, 240, 0.55) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+}
