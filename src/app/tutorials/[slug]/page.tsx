@@ -9,7 +9,11 @@ import { VideoPlayer } from "@/components/media/video-player";
 import { buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
+<<<<<<< HEAD
 import { getTutorialBySlug, siteConfig, tutorials } from "@/data/site";
+=======
+import { getTutorialBySlug, tutorials } from "@/data/site";
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
 
 type TutorialDetailPageProps = {
   params: {
@@ -98,6 +102,7 @@ export default function TutorialDetailPage({
       </section>
 
       <section className="section-shell -mt-10 pb-16 sm:pb-20">
+<<<<<<< HEAD
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.18fr)_380px]">
           <Reveal>
             <Card className="overflow-hidden p-0">
@@ -126,6 +131,15 @@ export default function TutorialDetailPage({
 
           <Reveal delay={0.08} className="h-full">
             <Card className="p-7 sm:p-8 xl:sticky xl:top-24">
+=======
+        <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr]">
+          <Reveal>
+            <VideoPlayer url={tutorial.videoUrl} poster={tutorial.image} />
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <Card className="p-7 sm:p-8">
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-secondary">
                 Course Snapshot
               </p>
@@ -143,6 +157,7 @@ export default function TutorialDetailPage({
                   <p className="font-semibold text-slate">Recorded + practice support</p>
                 </div>
               </div>
+<<<<<<< HEAD
               <div className="mt-8 rounded-[26px] bg-slate-50 p-5">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-secondary">
                   Need Help Choosing?
@@ -165,6 +180,15 @@ export default function TutorialDetailPage({
                 >
                   Call {siteConfig.phone}
                 </a>
+=======
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href="/register" className={buttonVariants({ variant: "primary" })}>
+                  Enroll Now
+                </Link>
+                <Link href="/contact" className={buttonVariants({ variant: "outline" })}>
+                  Book a Call
+                </Link>
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
               </div>
             </Card>
           </Reveal>

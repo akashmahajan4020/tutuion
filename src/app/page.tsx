@@ -14,7 +14,10 @@ import {
   heroStats,
   homeBlogPosts,
   services,
+<<<<<<< HEAD
   siteConfig,
+=======
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
   testimonials,
   whyChooseUs,
 } from "@/data/site";
@@ -39,6 +42,7 @@ export default function Home() {
           <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
             <Reveal className="max-w-2xl">
               <p className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur">
+<<<<<<< HEAD
                 Gujarati Board and CBSE support for Grade 1 to 10
               </p>
               <h1 className="mt-6 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-[4.25rem]">
@@ -57,6 +61,26 @@ export default function Home() {
                   <PlayCircle className="h-4 w-4" />
                   Call {siteConfig.phone}
                 </a>
+=======
+                Trusted by 4,800+ ambitious students
+              </p>
+              <h1 className="mt-6 font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-[4.25rem]">
+                We Help You Achieve Academic Success
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-8 text-blue-50">
+                Expert tuition classes with recorded video lessons, structured
+                practice, and clear learning pathways for boards, entrance exams,
+                and language goals.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href="/tutorials" className={buttonVariants({ variant: "primary" })}>
+                  Start Learning
+                </Link>
+                <Link href="/tutorials/jee-foundation-mathematics" className={buttonVariants({ variant: "secondary" })}>
+                  <PlayCircle className="h-4 w-4" />
+                  Watch Demo
+                </Link>
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
               </div>
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
                 {heroStats.map((stat) => (
@@ -86,18 +110,36 @@ export default function Home() {
                 </div>
                 <div className="absolute bottom-6 right-0 z-0 hidden max-w-[220px] rounded-[30px] border border-white/20 bg-primary p-6 text-white shadow-[0_26px_60px_rgba(30,58,138,0.32)] sm:block">
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-blue-100">
+<<<<<<< HEAD
                     Class Support
                   </p>
                   <p className="mt-3 text-sm leading-7 text-blue-50">
                     Home tuition, online help, and revision support that keeps students consistent.
+=======
+                    Structured Practice
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-blue-50">
+                    Weekly tests, topic drills, and mentor-reviewed feedback loops.
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
                   </p>
                 </div>
                 <div className="absolute right-10 top-8 z-10 max-w-[240px] rounded-[30px] border border-white/80 bg-white p-6 shadow-soft sm:right-12">
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">
+<<<<<<< HEAD
                     Subjects Covered
                   </p>
                   <ul className="mt-4 grid gap-3">
                     {siteConfig.focusAreas.map((item) => (
+=======
+                    Recorded Learning
+                  </p>
+                  <ul className="mt-4 grid gap-3">
+                    {[
+                      "Replay difficult concepts anytime",
+                      "Short revision modules for exams",
+                      "Faculty-led doubt support",
+                    ].map((item) => (
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
                       <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 text-accent" />
                         <span>{item}</span>
@@ -194,7 +236,11 @@ export default function Home() {
         <SectionHeading
           eyebrow="Why Choose Us"
           title="Everything students need to stay consistent"
+<<<<<<< HEAD
           description="The learning experience is built around clarity, supportive teaching, repeatable revision, and practical guidance for families."
+=======
+          description="The platform is designed around retention: strong teaching, repeatable revision, responsive support, and pricing that feels accessible."
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
           align="center"
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -229,11 +275,19 @@ export default function Home() {
                   Ready To Start
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+<<<<<<< HEAD
                   Start with the right subject plan for your child
                 </h2>
               </div>
               <Link href="/register" className={buttonVariants({ variant: "secondary" })}>
                 Book Admission Help
+=======
+                  Join Today and Start Your Learning Journey
+                </h2>
+              </div>
+              <Link href="/register" className={buttonVariants({ variant: "secondary" })}>
+                Enroll Now
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
               </Link>
             </div>
           </div>
@@ -266,7 +320,11 @@ export default function Home() {
             <SectionHeading
               eyebrow="Contact Us"
               title="Talk to an academic advisor today"
+<<<<<<< HEAD
               description="Share the class, subject, or board you are targeting. We will help you choose the right support, teaching mode, and next step."
+=======
+              description="Share the class, subject, or exam you are targeting. We will recommend the right recorded modules, test plan, and mentor support."
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
             />
             <div className="grid gap-5 sm:grid-cols-2">
               <Card className="p-6">
@@ -283,10 +341,17 @@ export default function Home() {
                   Response Time
                 </p>
                 <p className="mt-3 text-lg font-semibold text-slate">
+<<<<<<< HEAD
                   Call or WhatsApp
                 </p>
                 <p className="mt-1 text-sm text-slate-500">
                   {siteConfig.phone}
+=======
+                  Within 1 working day
+                </p>
+                <p className="mt-1 text-sm text-slate-500">
+                  Course advice, demos, and fee details
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
                 </p>
               </Card>
             </div>

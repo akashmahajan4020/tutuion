@@ -66,7 +66,11 @@ export function RegisterForm() {
             required
             name="phone"
             type="tel"
+<<<<<<< HEAD
             placeholder="Enter phone number"
+=======
+            placeholder="+91 98765 43210"
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
             className="h-12 rounded-2xl border border-slate-200 px-4 outline-none transition focus:border-secondary"
           />
         </label>
@@ -95,7 +99,11 @@ export function RegisterForm() {
       </label>
       <div className="flex items-center justify-between gap-4">
         <p className="text-sm text-slate-500">
+<<<<<<< HEAD
           A coordinator will contact you to complete admission guidance.
+=======
+          A coordinator will contact you to complete onboarding.
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
         </p>
         <Button type="submit" disabled={isPending}>
           {isPending ? "Submitting..." : "Register Now"}

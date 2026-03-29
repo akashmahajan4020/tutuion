@@ -1,9 +1,15 @@
 import Link from "next/link";
 import {
   BriefcaseBusiness,
+<<<<<<< HEAD
   BookOpenText,
   Camera,
   Mail,
+=======
+  Camera,
+  Mail,
+  MapPin,
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
   Phone,
   PlayCircle,
 } from "lucide-react";
@@ -26,6 +32,7 @@ export function Footer() {
           <div className="space-y-5">
             <Logo dark />
             <p className="max-w-md text-sm leading-7 text-slate-300">
+<<<<<<< HEAD
               Alfa D Tutoring supports students with Maths, Science, English,
               Gujarati medium guidance, Hindi tutorial help, and spoken English
               practice.
@@ -38,6 +45,11 @@ export function Footer() {
                 </div>
               ))}
             </div>
+=======
+              Academic Edge brings together structured tuition, recorded video lessons,
+              expert doubt support, and conversion-focused student onboarding.
+            </p>
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
           </div>
 
           <div>
@@ -65,12 +77,21 @@ export function Footer() {
             <h3 className="font-display text-lg font-semibold">Contact Info</h3>
             <div className="mt-5 grid gap-4 text-sm text-slate-300">
               <div className="flex gap-3">
+<<<<<<< HEAD
                 <BookOpenText className="mt-0.5 h-4 w-4 text-accent" />
                 <span>{siteConfig.availability}</span>
               </div>
               <div className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 text-accent" />
                 <a href={`tel:${siteConfig.phone}`}>Call or WhatsApp: {siteConfig.phone}</a>
+=======
+                <MapPin className="mt-0.5 h-4 w-4 text-accent" />
+                <span>{siteConfig.address}</span>
+              </div>
+              <div className="flex gap-3">
+                <Phone className="mt-0.5 h-4 w-4 text-accent" />
+                <a href={`tel:${siteConfig.phone}`}>{siteConfig.phone}</a>
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
               </div>
               <div className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 text-accent" />

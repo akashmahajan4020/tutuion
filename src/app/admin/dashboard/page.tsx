@@ -9,7 +9,11 @@ import { tutorials } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Admin Dashboard",
+<<<<<<< HEAD
   description: "Manage tutorials, uploads, and overview metrics for Alfa D Tutoring.",
+=======
+  description: "Manage tutorials, uploads, and overview metrics for Academic Edge.",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
 };
 
 export default async function AdminDashboardPage() {

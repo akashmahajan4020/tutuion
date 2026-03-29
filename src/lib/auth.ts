@@ -16,14 +16,22 @@ export const demoUsers: DemoUser[] = [
   {
     id: "admin-1",
     name: "Aarav Mehta",
+<<<<<<< HEAD
     email: "admin@alfadtutoring.com",
+=======
+    email: "admin@academicedge.com",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
     password: "Admin123!",
     role: "admin",
   },
   {
     id: "student-1",
     name: "Ishita Rao",
+<<<<<<< HEAD
     email: "student@alfadtutoring.com",
+=======
+    email: "student@academicedge.com",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
     password: "Student123!",
     role: "student",
   },
@@ -43,7 +51,11 @@ export const authOptions: NextAuthOptions = {
         email: {
           label: "Email",
           type: "email",
+<<<<<<< HEAD
           placeholder: "student@alfadtutoring.com",
+=======
+          placeholder: "student@academicedge.com",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
         },
         password: {
           label: "Password",

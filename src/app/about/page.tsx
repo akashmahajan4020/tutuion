@@ -10,7 +10,11 @@ import { heroStats, whyChooseUs } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
+<<<<<<< HEAD
   description: "Learn about Alfa D Tutoring, our subject support, and how we guide students from Grade 1 to 10.",
+=======
+  description: "Learn about Academic Edge, our teaching model, and why students trust our tuition platform.",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
 };
 
 export default function AboutPage() {
@@ -19,9 +23,15 @@ export default function AboutPage() {
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.95fr]">
         <Reveal className="space-y-8">
           <SectionHeading
+<<<<<<< HEAD
             eyebrow="About Alfa D Tutoring"
             title="Trusted tuition support built around clear, steady progress"
             description="We focus on simple explanations, personal attention, and practical guidance for students who need daily consistency more than flashy promises."
+=======
+            eyebrow="About Academic Edge"
+            title="A modern tuition platform built for serious outcomes"
+            description="We adapted a premium property-style layout into an education brand that feels trustworthy, spacious, and conversion-focused. The result is clean, professional, and practical."
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
           />
           <div className="grid gap-5 sm:grid-cols-3">
             {heroStats.map((stat) => (
@@ -32,10 +42,17 @@ export default function AboutPage() {
             ))}
           </div>
           <p className="body-copy">
+<<<<<<< HEAD
             Alfa D Tutoring combines home and online teaching with revision-friendly
             lessons. We support Maths, Science, English, Gujarati medium learning,
             Hindi tutorial guidance, and spoken English for families who want a
             dependable learning partner.
+=======
+            Academic Edge combines live mentorship, premium recorded lessons, and
+            exam-driven practice. Every page, section, and call-to-action is designed
+            to move prospective students toward enrolment without making the interface
+            feel crowded or over-designed.
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
           </p>
           <Link href="/register" className={buttonVariants({ variant: "primary" })}>
             Enroll Now
@@ -59,7 +76,11 @@ export default function AboutPage() {
         <SectionHeading
           eyebrow="Why Families Trust Us"
           title="Clear teaching, structured accountability, and better revision access"
+<<<<<<< HEAD
           description="Parents stay with us because the teaching stays simple, the support is personal, and the expectations are easy to understand."
+=======
+          description="The platform is intentionally simple: premium visuals up front, then enough proof and clarity for students and parents to make a confident decision."
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
           align="center"
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">

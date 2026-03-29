@@ -33,6 +33,7 @@ export function LoginForm({ callbackUrl = "/" }: LoginFormProps) {
           </div>
 
           <form
+<<<<<<< HEAD
             className="grid gap-4"
             onSubmit={(event) => {
               event.preventDefault();
@@ -40,6 +41,15 @@ export function LoginForm({ callbackUrl = "/" }: LoginFormProps) {
 
               startTransition(async () => {
                 setError("");
+=======
+          className="grid gap-4"
+          onSubmit={(event) => {
+            event.preventDefault();
+            const formData = new FormData(event.currentTarget);
+
+            startTransition(async () => {
+              setError("");
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
 
                 const response = await signIn("credentials", {
                   email: String(formData.get("email") ?? ""),
@@ -64,7 +74,11 @@ export function LoginForm({ callbackUrl = "/" }: LoginFormProps) {
                 required
                 name="email"
                 type="email"
+<<<<<<< HEAD
                 placeholder="student@alfadtutoring.com"
+=======
+                placeholder="student@academicedge.com"
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
                 className="h-12 rounded-2xl border border-slate-200 px-4 outline-none transition focus:border-secondary"
               />
             </label>
@@ -74,7 +88,11 @@ export function LoginForm({ callbackUrl = "/" }: LoginFormProps) {
                 required
                 name="password"
                 type="password"
+<<<<<<< HEAD
                 placeholder="Enter password"
+=======
+                placeholder="••••••••"
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
                 className="h-12 rounded-2xl border border-slate-200 px-4 outline-none transition focus:border-secondary"
               />
             </label>

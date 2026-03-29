@@ -8,7 +8,11 @@ import { blogHighlights, blogPosts } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Blog",
+<<<<<<< HEAD
   description: "Read Alfa D Tutoring articles on study routines, revision planning, and effective learning habits.",
+=======
+  description: "Read Academic Edge articles on study routines, exam strategy, and effective learning systems.",
+>>>>>>> 1d15753c517a3db0650c03bdb78db2cf55e4604d
 };
 
 export default function BlogPage() {
